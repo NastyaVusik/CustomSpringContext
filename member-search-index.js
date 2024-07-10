@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.example.context","c":"IntensiveContext","l":"getObject(Class<T>)","u":"getObject(java.lang.Class)"},{"p":"org.example.context","c":"IntensiveContext","l":"IntensiveContext()","u":"%3Cinit%3E()"},{"p":"org.example","c":"Main","l":"Main()","u":"%3Cinit%3E()"}];updateSearchResults();

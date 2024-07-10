@@ -28,6 +28,11 @@
       <artifactId>spring-beans</artifactId>
       <version>6.1.10</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.1.10</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>CustomSpringContext</finalName>
