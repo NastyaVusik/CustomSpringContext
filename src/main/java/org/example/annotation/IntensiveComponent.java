@@ -9,10 +9,12 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * @author Anastasiya Vusik
+ *  * This anotation is analogue of @Bean. Classes, which are marked with it, became beans and are managed
+ *  by IntensiveContext
  */
 
 @Documented
-@Target({METHOD, TYPE, FIELD, ANNOTATION_TYPE })
+@Target({TYPE, FIELD, ANNOTATION_TYPE })
 @Retention(RUNTIME)
 public @interface IntensiveComponent {
 

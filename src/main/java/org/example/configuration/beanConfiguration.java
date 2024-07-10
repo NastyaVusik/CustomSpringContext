@@ -1,7 +1,7 @@
 package org.example.configuration;
 
 import org.example.annotation.IntensiveComponent;
-import org.example.service.searchService.SearchImpl;
+import org.example.service.searchService.SearchServiceImpl;
 
 /**
  * @author Anastasiya Vusik
@@ -10,7 +10,7 @@ import org.example.service.searchService.SearchImpl;
 public class beanConfiguration {
 
     @IntensiveComponent
-    public SearchImpl search(){
-        return new SearchImpl();
+    public SearchServiceImpl search(){
+        return new SearchServiceImpl();
     }
 }

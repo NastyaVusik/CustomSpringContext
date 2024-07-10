@@ -7,7 +7,7 @@ import org.example.annotation.IntensiveComponent;
  */
 
 @IntensiveComponent
-public class SearchImpl implements Search{
+public class SearchServiceImpl implements SearchService {
 
     private String message;
 
@@ -16,7 +16,7 @@ public class SearchImpl implements Search{
     }
 
     @Override
-    public void searchSomething() {
+    public Class<?> searchBeanClass(String packageName, Class<?> type) {
 //        System.out.println("I'm smart method for search something interesting");
         System.out.println("message: " + message);
     }

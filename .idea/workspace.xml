@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fe7073a-285a-4e74-bee6-2b02ab5891fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/IntensiveComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/configuration/beanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/postprocessor/IntensiveBeanPostprocessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/context.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/InjectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/injectionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotation/IntensiveComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/IntensiveComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/configuration/beanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/configuration/beanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +34,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2j3YAgmkQKYo2IdrS879tDAdUik" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,6 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/CustomSpringContext",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720617087204</updated>
-      <workItem from="1720617088287" duration="11755000" />
+      <workItem from="1720617088287" duration="12879000" />
+      <workItem from="1720642472338" duration="3317000" />
     </task>
     <servers />
   </component>
