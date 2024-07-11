@@ -31,9 +31,6 @@ public class IntensiveContext {
      */
 
     public IntensiveContext(String packageName) {
-
-        beans.put(SearchService.class, new SearchServiceImpl());        //???????????????????????
-
         this.packageName = packageName;
     }
 
@@ -45,6 +42,7 @@ public class IntensiveContext {
      * @param <T>  is a bean type
      * @return is an instance of a bean
      */
+
     @SuppressWarnings("unchecked")
     public <T> T getObject(Class<T> type) {
 
@@ -54,10 +52,10 @@ public class IntensiveContext {
 
         Class<?> beanClass = searchService.searchClass(packageName, type);
         if (beanClass == null) {
-            throw new RuntimeException("Component of class " + type.getName() + "is not found");
+            throw new RuntimeException("Component of class " + type.getName() + " is not found");
         }
 
-        T instance = dependencyFactory.createInstance(beanClass);
+        T instance = (T) dependencyFactory.createInstance(beanClass);
         beans.put(type, instance);
 
         for (Field field : beanClass.getDeclaredFields()) {
@@ -65,7 +63,7 @@ public class IntensiveContext {
                 field.setAccessible(true);
                 Class<?> fieldType = field.getType();
                 Object fieldInstance = getObject(fieldType);
-                injectionService.inject(instance, fieldInstance);
+                injectionService.inject(instance, field, fieldInstance);
 
             }
         }

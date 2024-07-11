@@ -16,6 +16,6 @@ public class Class2 {
     public void printSomething(){
 
         class1.run();
-        System.out.println("Class " + getClass().getName() + " became a bean too");
+        System.out.println("Class " + getClass().getName() + " is a bean too");
     }
 }
