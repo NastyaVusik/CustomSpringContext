@@ -3,12 +3,11 @@ package org.example.service.searchService;
 import org.example.annotation.IntensiveComponent;
 import org.reflections.Reflections;
 
-import java.util.HashSet;
 import java.util.Set;
 
 /**
  * @author Anastasiya Vusik
- * Implementation of SearchService interface. This class look for beans (classes assigned with @IntensiveComponent
+ * Implementation of SearchService interface. This class look for beans (classes assigned with @IntensiveComponent)
  */
 
 public class SearchServiceImpl implements SearchService {

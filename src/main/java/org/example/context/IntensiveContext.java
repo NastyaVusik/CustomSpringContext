@@ -67,7 +67,7 @@ public class IntensiveContext {
                 field.setAccessible(true);
                 Class<?> fieldType = field.getType();
                 Object fieldInstance = getObject(fieldType);
-                injectionService.inject(instance, field, fieldInstance);
+                injectionService.inject(instance, fieldInstance);
 
             }
         }

@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6fe7073a-285a-4e74-bee6-2b02ab5891fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/postprocessor/IntensiveBeanPostprocessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/postprocessor/IntensiveBeanPostprocessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/InjectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/InjectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/injectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/injectionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/searchService/SearchServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +86,7 @@
       <updated>1720617087204</updated>
       <workItem from="1720617088287" duration="12879000" />
       <workItem from="1720642472338" duration="3684000" />
-      <workItem from="1720684369868" duration="1333000" />
+      <workItem from="1720684369868" duration="2605000" />
     </task>
     <servers />
   </component>

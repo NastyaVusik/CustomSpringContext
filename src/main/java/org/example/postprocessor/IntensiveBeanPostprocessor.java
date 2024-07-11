@@ -22,7 +22,7 @@ public class IntensiveBeanPostprocessor implements BeanPostProcessor {
     private final Map<String, Class> beanMap = new HashMap<>();
 
     @Override
-    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+    public Object postProcessBeforeInitialization(Object bean, Field field, String beanName) throws Exception {
 
         Class<?> beanClass = bean.getClass();
         if(beanClass.isAnnotationPresent(IntensiveComponent.class)){
