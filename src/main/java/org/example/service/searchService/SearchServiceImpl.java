@@ -1,23 +1,38 @@
 package org.example.service.searchService;
 
 import org.example.annotation.IntensiveComponent;
+import org.reflections.Reflections;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Anastasiya Vusik
+ * Implementation of SearchService interface. This class look for beans (classes assigned with @IntensiveComponent
  */
 
-@IntensiveComponent
 public class SearchServiceImpl implements SearchService {
 
-    private String message;
+    @Override
+    public Class<?> searchClass(String packageName, Class<?> type) {
 
-    public void setMessage(String message){
-        this.message = message;
-    }
+        Set<Class<?>> beansSet = findAllClasses(packageName);
+
+        for(Class<?> bean : beansSet){
+            if(type.isAssignableFrom(bean)){
+
+                return bean;
+            }
+        }
+            return null;
+        }
+
 
     @Override
-    public Class<?> searchBeanClass(String packageName, Class<?> type) {
-//        System.out.println("I'm smart method for search something interesting");
-        System.out.println("message: " + message);
+    public Set<Class<?>> findAllClasses(String packageName){
+
+        Reflections reflections = new Reflections(packageName);
+
+        return reflections.getTypesAnnotatedWith(IntensiveComponent.class);
     }
 }

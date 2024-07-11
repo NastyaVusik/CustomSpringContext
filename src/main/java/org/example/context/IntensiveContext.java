@@ -54,7 +54,7 @@ public class IntensiveContext {
             return (T) beans.get(type);
         }
 
-        Class<?> beanClass = searchService.searchBeanClass(packageName, type);
+        Class<?> beanClass = searchService.searchClass(packageName, type);
         if (beanClass == null) {
             throw new RuntimeException("Component of class " + type.getName() + "is not found");
         }
