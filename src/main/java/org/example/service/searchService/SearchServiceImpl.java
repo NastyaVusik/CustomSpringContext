@@ -17,18 +17,18 @@ public class SearchServiceImpl implements SearchService {
 
         Set<Class<?>> beansSet = findAllClasses(packageName);
 
-        for(Class<?> bean : beansSet){
-            if(type.isAssignableFrom(bean)){
+        for (Class<?> bean : beansSet) {
+            if (type.isAssignableFrom(bean)) {
 
                 return bean;
             }
         }
-            return null;
-        }
+        return null;
+    }
 
 
     @Override
-    public Set<Class<?>> findAllClasses(String packageName){
+    public Set<Class<?>> findAllClasses(String packageName) {
 
         Reflections reflections = new Reflections(packageName);
 

@@ -9,5 +9,6 @@ import java.util.Set;
 
 public interface SearchService {
     Class<?> searchClass(String packageName, Class<?> type);
+
     Set<Class<?>> findAllClasses(String packageName);
 }
