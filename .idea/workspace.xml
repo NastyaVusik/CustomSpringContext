@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe7073a-285a-4e74-bee6-2b02ab5891fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/testClass/Class3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/example/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/org/example/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/configuration/beanConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/context/IntensiveContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/factory/DependencyFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/InjectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/InjectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/injectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/injectionService/injectionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testClass/Class2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testClass/Class2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/context.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="6fe7073a-285a-4e74-bee6-2b02ab5891fe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +80,7 @@
       <updated>1720617087204</updated>
       <workItem from="1720617088287" duration="12879000" />
       <workItem from="1720642472338" duration="3684000" />
-      <workItem from="1720684369868" duration="13361000" />
+      <workItem from="1720684369868" duration="13770000" />
     </task>
     <servers />
   </component>
