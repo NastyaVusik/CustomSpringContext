@@ -7,8 +7,6 @@ import org.example.service.injectionService.InjectionService;
 import org.example.service.injectionService.injectionServiceImpl;
 import org.example.service.searchService.SearchService;
 import org.example.service.searchService.SearchServiceImpl;
-import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
-import org.springframework.context.support.GenericApplicationContext;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
