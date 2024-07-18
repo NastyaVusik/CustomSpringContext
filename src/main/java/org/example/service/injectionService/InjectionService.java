@@ -8,5 +8,5 @@ import java.lang.reflect.Field;
  */
 
 public interface InjectionService {
-    void inject(Object bean, Field field, Object value);
+    void inject(Object bean, Field field, Object value, Class<?> type);
 }

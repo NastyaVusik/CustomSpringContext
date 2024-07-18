@@ -46,28 +46,33 @@ public class IntensiveContext {
     @SuppressWarnings("unchecked")
     public <T> T getObject(Class<T> type) {
 
+//        Check if instance of Class<T> type already exists in beans map
         if (beans.containsKey(type)) {
             return (T) beans.get(type);
         }
 
+//        If bean map doesn't contain bean of Class<T> type, look for this Class type in the package
         Class<?> beanClass = searchService.searchClass(packageName, type);
         if (beanClass == null) {
             throw new RuntimeException("Component of class " + type.getName() + " is not found");
         }
 
+//        When Class<T> type was found, dependencyFactory create new instance of Class<T> type and  put it into the beans map
         T instance = (T) dependencyFactory.createInstance(beanClass);
         beans.put(type, instance);
 
-        for (Field field : beanClass.getDeclaredFields()) {
-            if (field.isAnnotationPresent(IntensiveComponent.class)) {
-                field.setAccessible(true);
-                Class<?> fieldType = field.getType();
-                Object fieldInstance = getObject(fieldType);
-                injectionService.inject(instance, field, fieldInstance);
+//        Iterate through beanClass and its fields and also through parents of beanClass and its fields
+        for (Class<?> clazz = beanClass; clazz != null; clazz = clazz.getSuperclass()) {
+            for (Field field : beanClass.getDeclaredFields()) {
+                if (field.isAnnotationPresent(IntensiveComponent.class)) {
+                    field.setAccessible(true);
+                    Class<?> fieldType = field.getType();
+                    Object fieldInstance = getObject(fieldType);
+                    injectionService.inject(instance, field, fieldInstance, clazz);
 
+                }
             }
         }
-
         return instance;
     }
 }
